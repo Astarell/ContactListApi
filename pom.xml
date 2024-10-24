@@ -19,6 +19,8 @@
         <aeonbits.owner.version>1.0.4</aeonbits.owner.version>
         <maven-antrun-version>1.7</maven-antrun-version>
         <lombok-version>1.18.30</lombok-version>
+
+        <includeTags></includeTags>
     </properties>
 
     <dependencies>
@@ -121,6 +123,7 @@
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
+                    <groups>${includeTags}</groups>
                 </configuration>
                 <dependencies>
                     <dependency>

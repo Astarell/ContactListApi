@@ -33,7 +33,7 @@ public class UserProfileControllerTests {
         @MethodSource("data_provider.UserProfileDataProvider#getUserValidTokenSuccessArgs")
         @Epic("User API")
         @Feature("Get")
-        @Tags({@Tag("smoke"), @Tag("api")})
+        @Tags({@Tag("smoke"), @Tag("api"), @Tag("get")})
         @Story(value = "Positive")
         @DisplayName("Return 200 with valid body and expected fields when getting user valid token")
         public void getUser_WhenGetUser_AndValidTokenPresent_ThenSuccess(Map<SpecRequestSettingsEnum, Object> requestSettings,
@@ -77,7 +77,7 @@ public class UserProfileControllerTests {
         @MethodSource("data_provider.UserProfileDataProvider#patchUserValidTokenEntityFullSuccessArgs")
         @Epic("User API")
         @Feature("Patch")
-        @Tags({@Tag("smoke"), @Tag("api")})
+        @Tags({@Tag("smoke"), @Tag("api"), @Tag("patch")})
         @Story(value = "Positive")
         @DisplayName("Return 200 and perform action if token is valid and patch entity full")
         public void patchUser_WhenPatchUser_AndValidTokenPresent_AndPatchEntityFull_ThenSuccess(Map<SpecRequestSettingsEnum, Object> requestSettings,
