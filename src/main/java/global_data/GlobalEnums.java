@@ -1,0 +1,6 @@
+package global_data;
+
+public enum GlobalEnums {
+
+    ADD_USER_RESPONSE, TEST_USER_CREDENTIALS, TEST_USER_REQUEST_SETTINGS, TEST_USER_RESPONSE_SETTINGS
+}
